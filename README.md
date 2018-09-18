@@ -30,7 +30,7 @@ var jwtPayload = {
     "aud": "https://ims-na1.adobelogin.com/c/xxxxxxxxxxxxxxxxxx"
 };
 ```
-  * Copy you clientId and clientSecret from the adobe.io console and paste it into the code
+  * Copy your clientId and clientSecret from the adobe.io console and paste it into the code
   
 ```javascript
 // get your clientId and clientSecret from the adobe.io console

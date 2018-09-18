@@ -5,10 +5,10 @@ Forms Data Model - JSON Schema
 
 * Install Node.js
 * Install the following packages (npm install)
-** express
-** request
-** body-parser
-** fs
-** axios
-** jsonwebtoken
+  * express
+  * request
+  * body-parser
+  * fs
+  * axios
+  * jsonwebtoken
 

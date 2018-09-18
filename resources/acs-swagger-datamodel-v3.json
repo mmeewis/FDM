@@ -1,0 +1,160 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"version": "1.0.0",
+		"title": "Adobe Campaign Standard via Node.js",
+		"description": "Adobe Campaign Standard Data Model Integration"
+	},
+	"host": "localhost:8085",
+	"basePath": "/forms",
+	"schemes": [
+		"http"
+	],
+	"paths": {
+		"/customer/getACSProfileByCustomerId/{id}": {
+			"get": {
+				"summary": "Get ACS profile by customerId",
+				"produces": [
+					"application/json"
+				],
+				"operationId": "getProfile",
+				"parameters": [{
+					"name": "id",
+					"type": "string",
+					"in": "path",
+					"required": true,
+					"description": "ACS CustomerId"
+				}],
+				"responses": {
+					"200": {
+						"description": "Successfull Response",
+						"schema": {
+							"$ref": "#/definitions/Profile"
+						}
+
+					}
+
+				}
+			}
+		},
+        "/customer/createACSProfile": {
+			"post": {
+				"summary": "Creates a campaign profile and returns a profile with customerId",
+				"produces": [
+					"application/json"
+				],
+				"operationId": "createProfile",
+				"parameters": [{
+					"name": "body",
+					"in": "body",
+					"required": true,
+					"description": "The profile to create",
+                    "schema": {
+                        "$ref": "#/definitions/Profile"
+                    }
+				}],
+				"responses": {
+					"200": {
+						"description": "Successfull Response",
+						"schema": {
+							"$ref": "#/definitions/Profile"
+						}
+
+					}
+
+				}
+			}
+		},
+        "/postalcode/{postalcode}": {
+			"get": {
+				"summary": "Get City for postalcode",
+				"produces": [
+					"application/json"
+				],
+				"operationId": "getCity",
+				"parameters": [{
+					"name": "postalcode",
+					"type": "string",
+					"in": "path",
+					"required": true,
+					"description": "Postalcode"
+				}],
+				"responses": {
+					"200": {
+						"description": "Successfull Response",
+						"schema": {
+							"$ref": "#/definitions/PostCode"
+						}
+
+					}
+
+				}
+			}
+		}
+	},
+	"definitions": {
+		"Profile": {
+			"type": "object",
+			"properties": {
+				"cusCrmid": {
+					"type": "string"
+				},
+                "firstName": {
+					"type": "string"
+				},
+                "lastName": {
+					"type": "string"
+				},
+                "mobilePhone": {
+					"type": "string"
+				},
+                "email": {
+					"type": "string"
+				},
+                "location": {
+                    "$ref": "#/definitions/Location"
+                }
+            }
+		},
+        "PostCode" : {
+              "type": "object",
+              "properties": {
+                    "postcode_hoofdgemeente": {
+                      "type": "string"
+                    },
+                    "naam_hoofdgemeente": {
+                      "type": "string"
+                    },
+                    "postcode_deelgemeente": {
+                      "type": "string"
+                    },
+                    "naam_deelgemeente": {
+                      "type": "string"
+                    },
+                    "taal": {
+                      "type": "string"
+                    },
+                    "region": {
+                      "type": "string"
+                    },
+                    "longitude": {
+                      "type": "string"
+                    },
+                    "latitude": {
+                      "type": "string"
+                    }
+                  }
+            },
+            "Location" : {
+               "type": "object",
+                    "properties" : {
+                        "city" : {
+                            "type" : "string"
+                        },
+                        "zipCode" : {
+                            "type" : "string"
+                        }
+                    }  
+            }
+        }
+}

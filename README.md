@@ -1,7 +1,7 @@
 # FDM
 Forms Data Model - JSON Schema
 
-## Requirement
+## Setup
 
 * Install Node.js
 
@@ -30,3 +30,17 @@ var jwtPayload = {
     "aud": "https://ims-na1.adobelogin.com/c/xxxxxxxxxxxxxxxxxx"
 };
 ```
+  * Copy you clientId and clientSecret from the adobe.io console and paste it into the code
+  
+```javascript
+// get your clientId and clientSecret from the adobe.io console
+var clientId = 'xxxxxxxxxxxxxxxxxxx';
+var clientSecret = 'xxxxxxxxxxxxxxxxxx';
+```
+
+## Run
+
+* node acs-profile.js
+
+
+  

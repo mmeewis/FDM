@@ -118,4 +118,11 @@ var clientSecret = 'xxxxxxxxxxxxxxxxxx';
 
 The json schema exposes some additional services that can be used to optimize the form filling experience:
 
+#### Fetch a ACS Profile via its email address
+
+This method can be invoked as part of a field change rule, whenever the email field is updated, the profile information associated with the email is fetched from campaign and will be used to prefill a form fields.
+
+#### Fetch a Postalcode information
+
+This method can be invoked as part of a field change rule, whenever the postalcode field is updated, the city information will be fetched using a Belgian postalcode service.
 

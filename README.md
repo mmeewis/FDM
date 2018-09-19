@@ -77,5 +77,11 @@ var clientSecret = 'xxxxxxxxxxxxxxxxxx';
 
 ![fdm.png](assets/fdm.png)
 
+## Define the read/write methods
 
+* Select "Profile" under "DEFAULT SCHEMA" and "Add Selected"
+* In the dialog, click "Add"
+* Save
+
+![fdm2.png](assets/fdm2.png)
   

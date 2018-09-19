@@ -15,7 +15,7 @@ Forms Data Model - JSON Schema
 
 * Copy your private key into the folder where you will run acs-profile.js
 
-* Edit acs-profile.js
+* Edit acs-profile.js (the file included is acs-profile-obfuscated.js, it is my acs-profile.js but with all sensitive info cleared)
   
   * From the adobe.io console copy the JWT for your integration and paste it to the jwtPayload object
   
@@ -55,6 +55,14 @@ var clientSecret = 'xxxxxxxxxxxxxxxxxx';
 ## Run
 
 * node acs-profile.js
+
+## Test
+
+To see if the ACS connection is working properly, open the following url in your browser. This url assumes that your acs-profile app is running on 8085.
+
+(http://localhost:8085/forms/customer/getACSProfiles)
+
+You should get a raw ACS response that lists all your profiles.
 
 ## Define a datasource in AEM
 

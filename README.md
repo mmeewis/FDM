@@ -90,3 +90,15 @@ var clientSecret = 'xxxxxxxxxxxxxxxxxx';
 * In the "Edit Properties" panel select
    * "GET /customer/getACSProfileByCustomerId/{id}" as your read service
    * "POST /customer/createACSProfile" as your write service
+   
+### Define how the parameter for the read service should be identified
+* Edit the "Id" GET argument (a dialog appears)
+* Select "Literal" and enter a known Adobe Campaign Standard "Customer Id" (requires data model extension)
+* Done, Done, Save
+
+### Test your read service
+* Select the "Profile" enity in the Model (should turn blue when selected)
+* From the top menu select "Test Model Object"
+* Make sure everything is set as shown in the screen below:
+
+![fdm3.png](assets/fdm3.png)

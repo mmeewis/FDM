@@ -88,5 +88,5 @@ var clientSecret = 'xxxxxxxxxxxxxxxxxx';
 * In the "Model" window select "Profile" (it should turn blue when properly selected)
 * In the top menu, select "Edit Properties"
 * In the "Edit Properties" panel select
- * "GET /customer/getACSProfileByCustomerId/{id}" as your read service
- * "POST /customer/createACSProfile" as your write service
+   * "GET /customer/getACSProfileByCustomerId/{id}" as your read service
+   * "POST /customer/createACSProfile" as your write service

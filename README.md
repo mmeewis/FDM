@@ -129,4 +129,7 @@ This method can be invoked as part of a field change rule, whenever the postalco
 ![fdm5.png](assets/fdm5.png)
 
 * As shown in the screen above, select the two services and hit "Add Selected"
+* Hit "Add" in the dialog that appears, as a result the "PostalCode" entity will add to your model
+* Hit "Save"
+
 

@@ -30,6 +30,20 @@ var jwtPayload = {
     "aud": "https://ims-na1.adobelogin.com/c/xxxxxxxxxxxxxxxxxx"
 };
 ```
+  * Replace the "exp" by "exp": tomorrow.getTime() so that it looks like:
+
+```javascript
+// get your jwtPayload from the adobe.io console
+
+var jwtPayload = {
+    "exp": tomorrow.getTime(),
+    "iss": "xxxxxxx@AdobeOrg",
+    "sub": "xxxxxxx@techacct.adobe.com",
+    "https://ims-na1.adobelogin.com/s/ent_campaign_sdk": true,
+    "aud": "https://ims-na1.adobelogin.com/c/xxxxxxxxxxxxxxxxxx"
+};
+```
+  
   * Copy your clientId and clientSecret from the adobe.io console and paste it into the code
   
 ```javascript

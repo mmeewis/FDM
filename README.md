@@ -56,5 +56,7 @@ var clientSecret = 'xxxxxxxxxxxxxxxxxx';
 
 * node acs-profile.js
 
+## Define a cloudservice in AEM
 
+* Navigate to [http://localhost:4502/libs/fd/fdm/gui/components/admin/fdmcloudservice/fdm.html/conf]
   

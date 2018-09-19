@@ -126,3 +126,7 @@ This method can be invoked as part of a field change rule, whenever the email fi
 
 This method can be invoked as part of a field change rule, whenever the postalcode field is updated, the city information will be fetched using a Belgian postalcode service.
 
+![fdm5.png](assets/fdm5.png)
+
+* As shown in the screen above, select the two services and hit "Add Selected"
+

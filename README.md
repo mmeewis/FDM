@@ -105,7 +105,7 @@ var clientSecret = 'xxxxxxxxxxxxxxxxxx';
 
 * You should see your ACS Profile result in the output panel
 
-## Test your write service
+### Test your write service
 * In the "Test Model Object" screen, Select "Write Model Object" for the "Profile" entity
 * A pre-populated object will be generated
 * Edit the "Profile" properties (if you hit test, the profile will be created in your Adobe Campaign instance
@@ -114,7 +114,8 @@ var clientSecret = 'xxxxxxxxxxxxxxxxxx';
 
 ![fdm4.png](assets/fdm4.png)
 
+### Additional services
+
+The json schema exposes some additional services that can be used to optimize the form filling experience:
 
 
-
-* The resp

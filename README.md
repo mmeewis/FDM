@@ -75,5 +75,7 @@ var clientSecret = 'xxxxxxxxxxxxxxxxxx';
 * Select your data source created in the previous step
 * Save and open in "Edit"
 
+![fdm.png](../assets/fdm.png)
+
 
   

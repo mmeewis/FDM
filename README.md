@@ -56,7 +56,24 @@ var clientSecret = 'xxxxxxxxxxxxxxxxxx';
 
 * node acs-profile.js
 
-## Define a cloudservice in AEM
+## Define a datasource in AEM
 
-* Navigate to [http://localhost:4502/libs/fd/fdm/gui/components/admin/fdmcloudservice/fdm.html/conf]
+* Navigate to (http://localhost:4502/libs/fd/fdm/gui/components/admin/fdmcloudservice/fdm.html/conf)
+* Open "Global" and hit "Create"
+* Enter name and title and select "RESTful" service as the Service Type
+* Next
+* Select "File" as the Swagger source
+* Browse and uplaod "acs-swagger-datamodel-v3.json"
+* Create
+
+## Create the Forms Data Model in AEM
+
+* Navigate to (http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm)
+* Create
+* Enter a name and select "Global" as your "Data Source Configuration"
+* Next
+* Select your data source created in the previous step
+* Save and open in "Edit"
+
+
   

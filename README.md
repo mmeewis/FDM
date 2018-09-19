@@ -132,4 +132,14 @@ This method can be invoked as part of a field change rule, whenever the postalco
 * Hit "Add" in the dialog that appears, as a result the "PostalCode" entity will add to your model
 * Hit "Save"
 
+![fdm6.png](assets/fdm6.png)
+
+### Test the services
+
+You can test the services by selecting one of them and choose "Test Service" from the top menu
+
+![fdm7.png](assets/fdm7.png)
+
+![fdm8.png](assets/fdm8.png)
+
 

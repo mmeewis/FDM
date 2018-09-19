@@ -77,7 +77,7 @@ var clientSecret = 'xxxxxxxxxxxxxxxxxx';
 
 ![fdm.png](assets/fdm.png)
 
-## Define the read/write methods
+### Define the read/write methods
 
 * Select "Profile" under "DEFAULT SCHEMA" and "Add Selected"
 * In the dialog, click "Add"
@@ -91,12 +91,12 @@ var clientSecret = 'xxxxxxxxxxxxxxxxxx';
    * "GET /customer/getACSProfileByCustomerId/{id}" as your read service
    * "POST /customer/createACSProfile" as your write service
    
-### Define how the parameter for the read service should be identified
+#### Define how the parameter for the read service should be identified
 * Edit the "Id" GET argument (a dialog appears)
 * Select "Literal" and enter a known Adobe Campaign Standard "Customer Id" (requires data model extension)
 * Done, Done, Save
 
-### Test your read service
+#### Test your read service
 * Select the "Profile" enity in the Model (should turn blue when selected)
 * From the top menu select "Test Model Object"
 * Make sure everything is set as shown in the screen below:
@@ -105,7 +105,7 @@ var clientSecret = 'xxxxxxxxxxxxxxxxxx';
 
 * You should see your ACS Profile result in the output panel
 
-### Test your write service
+#### Test your write service
 * In the "Test Model Object" screen, Select "Write Model Object" for the "Profile" entity
 * A pre-populated object will be generated
 * Edit the "Profile" properties (if you hit test, the profile will be created in your Adobe Campaign instance
@@ -134,7 +134,7 @@ This method can be invoked as part of a field change rule, whenever the postalco
 
 ![fdm6.png](assets/fdm6.png)
 
-### Test the services
+#### Test the services
 
 You can test the services by selecting one of them and choose "Test Service" from the top menu
 
@@ -142,4 +142,4 @@ You can test the services by selecting one of them and choose "Test Service" fro
 
 ![fdm8.png](assets/fdm8.png)
 
-
+## Use the Form Data Model in an AEM Form

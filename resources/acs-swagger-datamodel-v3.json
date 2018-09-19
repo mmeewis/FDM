@@ -17,13 +17,39 @@
 				"produces": [
 					"application/json"
 				],
-				"operationId": "getProfile",
+				"operationId": "getProfileByCustomerId",
 				"parameters": [{
 					"name": "id",
 					"type": "string",
 					"in": "path",
 					"required": true,
 					"description": "ACS CustomerId"
+				}],
+				"responses": {
+					"200": {
+						"description": "Successfull Response",
+						"schema": {
+							"$ref": "#/definitions/Profile"
+						}
+
+					}
+
+				}
+			}
+		},
+        "/customer/getACSProfileByEmail/{email}": {
+			"get": {
+				"summary": "Get ACS profile by customerId",
+				"produces": [
+					"application/json"
+				],
+				"operationId": "getProfileByEmail",
+				"parameters": [{
+					"name": "email",
+					"type": "string",
+					"in": "path",
+					"required": true,
+					"description": "ACS Customer Email"
 				}],
 				"responses": {
 					"200": {

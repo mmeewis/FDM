@@ -151,3 +151,22 @@ You can test the services by selecting one of them and choose "Test Service" fro
 ![fdm8.png](assets/fdm8.png)
 
 ## Use the Form Data Model in an AEM Form
+
+### Send me an email - Rule
+
+```javascript
+var operationInfo = {
+    "formDataModelId": "/content/dam/formsanddocuments-fdm/aem-meetup/aem-meetup",
+    "operationTitle": "POST /customer/sendDraftFormLink",
+    "operationName": "POST /customer/sendDraftFormLink_15397152131100"
+};
+var inputs = {
+    "DraftLinkEvent.email" : email_2,
+    "DraftLinkEvent.ctx.email" : email_2,
+    "DraftLinkEvent.ctx.draftId" : guideBridge.customContextProperty('draftID'),
+    "DraftLinkEvent.ctx.labmachinelabel" : firstName
+};
+var outputs = {
+};
+guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs);;
+```
